@@ -1,19 +1,25 @@
-
-// import React from 'react';
-// import { AppBar, Toolbar } from '@material-ui/core'
-
-// export default function Header() {
+import React from 'react';
+import { AppBar, Toolbar, Grid } from '@material-ui/core'
+// import './header.css';
+export default function Header() {
     
-//     return (
+    return (
+       
+        <AppBar position="static">
+         <Toolbar>
+           <Grid container>
         
-//         <AppBar position="static">
-//         <Toolbar>
-        
-        
-//         </Toolbar>
-//         </AppBar>
-        
-        
-//         )
+              <Grid item sm={4} style={{border:'1px solid #fff '}}>
+              
+              
+              </Grid>
+               <Grid item sm={8} style={{border:'1px solid #000'}}>
+
+              </Grid>
+           </Grid>
+        </Toolbar>
+      </AppBar>
+       
+        )
     
-// }
+}
